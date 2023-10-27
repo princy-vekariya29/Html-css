@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <!-- favicon-icon -->
+    <link href="images/flatIcon.png" rel="icon" type="image/icon" />
+    <!-- fonts -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/owlcarosul.css" rel="stylesheet" type="text/css" />
+    <!-- custome css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- Sign Up   -->
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- log in -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="bg-dark d-flex align-items-center col-12 top-0 z-1">
+        <div class="col-4 text-center py-4 col-lg-2">
+            <img src="images/logo.png" alt="logo" class="img-fluid" />
+        </div>
+        <nav class="col-7 d-none d-lg-block">
+            <ul class="d-flex mb-0 border-start">
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="index.html" class="text-decoration-none text-white">
+                        HOME
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 ">
+                    <a href="#" class="text-decoration-none text-white position-relative">
+                        PAGES
+                        <span class="position-absolute badge text-bg-primary start-100 bottom-100">NEW</span>
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="#" class="text-decoration-none text-white position-relative">
+                        SHOP
+                        <span class="position-absolute badge text-bg-danger start-100 bottom-100">HOT</span>
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="feature.html" class="text-decoration-none text-white">
+                        FETURES
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 dropdown">
+                    <a href="#" class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown">
+                        BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog Left</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Full</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Right</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Video</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Audio</a></li>
+                    </ul>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 d-none d-xl-block">
+                    <a href="#" class="text-decoration-none text-white btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#signup">
+                        Sign Up
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 d-none d-xxl-block">
+                    <a href="#" class="text-decoration-none text-white btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#login">
+                        Log In
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger col-2 py-4 px-4 text-center border-end border-start d-lg-none">
+            <a href="#offcanvasExample" class="text-white btn-primary" data-bs-toggle="offcanvas" role="button"
+                aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header d-flex justify-contant-between">
+                    <div></div>
+                    <button type="button" class="btn-close border border-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="index.html" class="text-decoration-none text-black fw-semibold">
+                                    HOME
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    PAGES
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    SHOP
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    FEATURES
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    SHOP
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 py-4 px-4 text-center col-lg-1">
+            <a href="#" class="text-white">
+                <i class="bi bi-search fs-4"></i>
+            </a>
+        </div>
+        <div class="col-2 py-4 px-4 border-start border-end text-center col-lg-1">
+            <a href="#" class="text-white position-relative">
+                <i class="bi bi-cart fs-4"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <!-- <span class="visually-hidden">unread messages</span> -->
+                </span>
+            </a>
+        </div>
+        <div class="col-2 py-4 px-4 text-center col-lg-1">
+            <a href="#" class="text-white">
+                <i class="bi bi-gear fs-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <img src="images/shoppage-img.jpg" alt="shop-img" class="img-fluid"/>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-6 d-flex">
+                        <div class="head">
+                            <a href="index.html" class="text-decoration-none text-primary fw-semibold">
+                                HOME /
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <span class="fs-6 fw-semibold text-primary">
+                                PRODUCT
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex">
+                        <div class="col-6">
+                            <span class="text-primary fw-semibold fs-6">Showing 1–18 of 91 results</span>
+                        </div>
+                        <div class="col-4 text-primary">
+                            <span class="text-primary fw-semibold fs-6">ALPHABETICALLY, A-Z </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product Lists -->
+                <div class="row product-list">
+                    <div class="left col-3">
+                        <div class="col-12 category">
+                            <h2 class="fs-6 text-prima mb-3 fw-normal">
+                                CATEGORIES
+                            </h2>
+                            <ul class="list-unstyled">
+                                <li class="py-2 d-flex ">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Accessories
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (29)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Best Seller
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (8)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Clothing
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (30)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Hand Bag
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (6)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Men
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (25)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            New Arrival
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (9)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Sneakers
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (6)
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="py-2 d-flex">
+                                    <div class="col-10">
+                                        <a href="#" class=" text-decoration-none text-primary fw-semibold">
+                                            Women
+                                        </a>
+                                    </div>
+                                    <div class="col-2">
+                                        <span>
+                                            (5)
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- COLOR -->
+                        <div class="color mt-5">
+                            <div class="col-12">
+                                <h2 class="fs-6 text-prima mb-3 fw-normal">
+                                    FILTER BY COLOR 
+                                </h2>
+                            </div>
+                            <ul class="d-flex flex-wrap list-unstyled">
+                                <li class="p-1 border border-0">
+                                    <a href="#" class=" bg-danger text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-warning text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-info text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-dark text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-success text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-secondary text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="bg-info-subtle text-white rounded-circle text-decoration-none d-inline-block text-center">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: blueviolet;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: aqua;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: blue;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: brown;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: chocolate;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: chartreuse;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: tomato;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: darkgreen;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: darkmagenta;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: darkred;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                                <li class="p-1 border border-0">
+                                    <a href="#" class="text-white rounded-circle text-decoration-none d-inline-block text-center" style="background-color: goldenrod;">
+                                        <i class="bi bi-check opacity-0"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- SIZE -->
+                        <div class="size mt-5">
+                            <div class="col-12">
+                                <h2 class="fs-6 text-prima mb-3 fw-normal">
+                                    FILTER BY SIZE 
+                                </h2>
+                            </div>
+                            <ul class="d-flex flex-wrap list-unstyled">
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        L
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Large
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        M
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        M/L
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Medium
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        S
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Small
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Xl
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Xs
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Xs/S
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block px-2 py-1 bg-light text-primary">
+                                        Xxl
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Brand -->
+                        <div class="brand mt-5">
+                            <div class="col-12">
+                                <h2 class="fs-6 text-prima mb-3 fw-normal">
+                                    FILTER BY BRAND 
+                                </h2>
+                            </div>
+                            <ul class="d-flex flex-wrap list-unstyled">
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block border">
+                                        <img src="images/f-brand1.jpg" alt="brand-1" class="img-fluid"/>
+                                    </a>
+                                </li>
+                                <li class="p-2 border border-0">
+                                    <a href="#" class="text-decoration-none d-inline-block border">
+                                        <img src="images/f-brand2.jpg" alt="brand-2" class="img-fluid"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="right seller col-9 d-flex flex-wrap">
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-1.jpg" alt="seller-1" class="img-fluid col-sm-12" />
+                                <a href="#"
+                                    class="text-decoration-none px-2 bg-secondary text-white position-absolute start-0">
+                                    Sale!
+                                </a>
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        10-pack rings
+                                    </p>
+                                    <span>
+                                        $49.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-2.jpg" alt="seller-2" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        5-pack-bracelate
+                                    </p>
+                                    <span>
+                                        $45.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-3.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        6-pack rings
+                                    </p>
+                                    <span>
+                                        $49.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-4.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Bodycon Dry Dresses
+                                    </p>
+                                    <span>
+                                        $139.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-5.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Brown scaff
+                                    </p>
+                                    <span>
+                                        $100.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-6.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Comfortable Shoes
+                                    </p>
+                                    <span>
+                                        $112.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-7.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Evening Clothing
+                                    </p>
+                                    <span>
+                                        $80.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-8.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Beauty EyeGlasses
+                                    </p>
+                                    <span>
+                                        $52.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-9.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Compact Hand Bag
+                                    </p>
+                                    <span>
+                                        $120.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-10.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Impact Watch
+                                    </p>
+                                    <span>
+                                        $120.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-11.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Long Shoes
+                                    </p>
+                                    <span>
+                                        $120.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 p-3 col-sm-12 col-md-6 col-xl-4">
+                            <div class="product position-relative">
+                                <img src="images/shop-product-12.jpg" alt="seller-3" class="img-fluid col-sm-12" />
+                                <div class="quick-shop col-12 py-4 text-center position-absolute start-0 bg-white">
+                                    <a href="#"
+                                        class="text-decoration-none border border-dark px-3 py-2 bg-white text-black start-0 me-2 ">
+                                        Add to Cart
+                                    </a>
+                                    <a href="#"
+                                        class="text-decoration-none text-black border border-dark px-3 py-2 bg-white text-white start-0">
+                                        <i class="bi bi-search text-black"></i>
+                                    </a>
+                                </div>
+                                <div class="name-price col-12 py-2 position-absolute bottom-0 start-0 bg-white text-center">
+                                    <p class="mb-0">
+                                        Luxury Bag
+                                    </p>
+                                    <span>
+                                        $150.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- footer -->
+    <!-- footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class=" p-5 text-center col-sm-12 col-lg-4">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                CONTACT US
+                            </h4>
+                        </span>
+                    </div>
+                    <p class="text-light py-4">
+                        5701 Outlets at Tejon Pkwy, Tejon<br> ranch CA 93203 UK.
+                    </p>
+                    <a href="#" class="text-white text-decoration-none fs-5">
+                        <i class="bi bi-telephone-fill"></i>
+                        (+800) 6868 2268
+                    </a>
+                </div>
+                <div class="p-5 mid text-center col-sm-12 col-lg-4">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                OUR SERVICES
+                            </h4>
+                        </span>
+                    </div>
+                    <ul class="list-unstyled mt-4">
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                About us
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Search
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Terms of service
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Refund policy
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-5 text-center col-sm-12 col-lg-4 px-sm-3">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                Follow US
+                            </h4>
+                        </span>
+                    </div>
+                    <div class="social-icon mt-4">
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-google"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row payment p-5 align-items-center">
+                <div class="left col-4 text-center">
+                    <div class="title">
+                        <span>
+                            <h4 class="text-primary fs-6 fw-semibold text-white">
+                                WE ACCEPT
+                            </h4>
+                            <h5 class="playfair text-secondary position-relative fs-10 text-light">
+                                Online Payment Be Secured
+                            </h5>
+                        </span>
+                    </div>
+                </div>
+                <div class="right col-8 d-flex flex-wrap text-center">
+                    <div class="col-2 col-sm-6 col-lg-2">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/paypal.png" alt="paypal"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-6 col-lg-2">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/visa.png" alt="visa"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 col-lg-3">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/discover.png" alt="discover"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 col-lg-3">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/citibank.png" alt="citibank"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

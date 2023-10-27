@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature</title>
+    <!-- favicon-icon -->
+    <link href="images/flatIcon.png" rel="icon" type="image/icon" />
+    <!-- fonts -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <!-- bootstrap css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link href="css/owlcarosul.css" rel="stylesheet" type="text/css" />
+    <!-- custome css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!-- Sign Up   -->
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- log in -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Log In</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">UserName</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Log in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header -->
+    <header class="bg-dark d-flex align-items-center border-bottom col-12 top-0 z-1">
+        <div class="col-4 text-center py-4 col-lg-2">
+            <img src="images/logo.png" alt="logo" class="img-fluid" />
+        </div>
+        <nav class="col-7 d-none d-lg-block">
+            <ul class="d-flex mb-0 border-start">
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="index.html" class="text-decoration-none text-white">
+                        HOME
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 ">
+                    <a href="#" class="text-decoration-none text-white position-relative">
+                        PAGES
+                        <span class="position-absolute badge text-bg-primary start-100 bottom-100">NEW</span>
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="Shop.html" class="text-decoration-none text-white position-relative">
+                        SHOP
+                        <span class="position-absolute badge text-bg-danger start-100 bottom-100">HOT</span>
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4">
+                    <a href="#" class="text-decoration-none text-white">
+                        FETURES
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 dropdown">
+                    <a href="#" class="text-decoration-none text-white dropdown-toggle" data-bs-toggle="dropdown">
+                        BLOG
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog Left</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Full</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Right</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Video</a></li>
+                        <li><a class="dropdown-item" href="#">Blog Audio</a></li>
+                    </ul>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 d-none d-xl-block">
+                    <a href="#" class="text-decoration-none text-white btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#signup">
+                        Sign Up
+                    </a>
+                </li>
+                <li class="mx-1 list-unstyled py-4 px-4 d-none d-xxl-block">
+                    <a href="#" class="text-decoration-none text-white btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#login">
+                        Log In
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hamburger col-2 py-4 px-4 text-center border-end border-start d-lg-none">
+            <a href="#offcanvasExample" class="text-white btn-primary" data-bs-toggle="offcanvas" role="button"
+                aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+            </a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header d-flex justify-contant-between">
+                    <div></div>
+                    <button type="button" class="btn-close border border-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="index.html" class="text-decoration-none text-black fw-semibold">
+                                    HOME
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    PAGES
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="Shop.html" class="text-decoration-none text-black fw-semibold">
+                                    SHOP
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    FEATURES
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                        <li
+                            class="list-unstyled text-start py-3 border-bottom d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="#" class="text-decoration-none text-black fw-semibold">
+                                    SHOP
+                                </a>
+                            </div>
+                            <div class="pe-4">
+                                <a href="#" class="text-decoration-none text-black fs-2 fw-semibold">
+                                    +
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-2 py-4 px-4 text-center col-lg-1">
+            <a href="#" class="text-white">
+                <i class="bi bi-search fs-4"></i>
+            </a>
+        </div>
+        <div class="col-2 py-4 px-4 border-start border-end text-center col-lg-1">
+            <a href="#" class="text-white position-relative">
+                <i class="bi bi-cart fs-4"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <!-- <span class="visually-hidden">unread messages</span> -->
+                </span>
+            </a>
+        </div>
+        <div class="col-2 py-4 px-4 text-center col-lg-1">
+            <a href="#" class="text-white">
+                <i class="bi bi-gear fs-4"></i>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- heading -->
+        <section class="py-5 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex">
+                        <div class="head">
+                            <a href="index.html" class="text-decoration-none text-primary fw-semibold">
+                                Home /
+                            </a>
+                        </div>
+                        <div class="col-2">
+                            <span class="fs-6 fw-semibold">
+                                Feature
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="py-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="d-flex mb-5">
+                            <div class="image p-3">
+                                <img src="images/head-feature-img-1.png" alt="feature" class="border rounded-circle">
+                            </div>
+                            <div class="content">
+                                <h5 class="fs-5">
+                                    EASY CUSTOMIZE
+                                </h5>
+                                <p class="fs-6">
+                                    A great collection of beautiful website templates for your need. Choose the best suitable template and start customizing it with Boutique built on Shopify's section system, customization options, advanced color management and more...
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="image p-3">
+                                <img src="images/head-feature-img-2.png" alt="feature" class="border rounded-circle">
+                            </div>
+                            <div class="content">
+                                <h5 class="fs-5">
+                                    CART UPSELL
+                                </h5>
+                                <p class="fs-6">
+                                    Forget the simple cart with the notification, with Boutique you can increase order value by trust seal, undo remove, coupon code, up-sell products, live update total price when change quantity. This features only have from The4.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="d-flex mb-5">
+                            <div class="image p-3">
+                                <img src="images/head-feature-img-3.png" alt="feature" class="border rounded-circle">
+                            </div>
+                            <div class="content">
+                                <h5 class="fs-5">
+                                    RESPONSIVE DESIGN
+                                </h5>
+                                <p class="fs-6">
+                                    Boutique is a wonderful responsive theme with 20 homepages available and you can easily find out the homepage you want among many choices. The theme is tested to be 100% responsive with all devices. As a result, friendly mobile display should be given priority to check.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="image p-3">
+                                <img src="images/head-feature-img-4.png" alt="feature" class="border rounded-circle">
+                            </div>
+                            <div class="content">
+                                <h5 class="fs-5">
+                                    EASY DOCUMENT AND FAST SUPPORT
+                                </h5>
+                                <p class="fs-6">
+                                    We have online document, video tutorial which can help you easy to control the theme. Still not enough ? we have the fastest customer support, we will help you solve your issue in minute. Check our review :)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="py-5 bg-black">
+        <div class="container">
+            <div class="row">
+                <div class=" p-5 text-center col-sm-12 col-lg-4">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                CONTACT US
+                            </h4>
+                        </span>
+                    </div>
+                    <p class="text-light py-4">
+                        5701 Outlets at Tejon Pkwy, Tejon<br> ranch CA 93203 UK.
+                    </p>
+                    <a href="#" class="text-white text-decoration-none fs-5">
+                        <i class="bi bi-telephone-fill"></i>
+                        (+800) 6868 2268
+                    </a>
+                </div>
+                <div class="p-5 mid text-center col-sm-12 col-lg-4">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                OUR SERVICES
+                            </h4>
+                        </span>
+                    </div>
+                    <ul class="list-unstyled mt-4">
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                About us
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Search
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Terms of service
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Refund policy
+                            </a>
+                        </li>
+                        <li class="py-1">
+                            <a href="#" class="text-light text-decoration-none d-inline-block">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-5 text-center col-sm-12 col-lg-4 px-sm-3">
+                    <div class="title">
+                        <span>
+                            <h5 class="playfair text-secondary position-relative fs-6 middle">
+                                Talk to Us Now !
+                            </h5>
+                            <h4 class="text-primary fs-4 fw-semibold text-white">
+                                Follow US
+                            </h4>
+                        </span>
+                    </div>
+                    <div class="social-icon mt-4">
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-google"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="btn btn-primary rounded-circle">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row payment p-5 align-items-center">
+                <div class="left col-4 text-center">
+                    <div class="title">
+                        <span>
+                            <h4 class="text-primary fs-6 fw-semibold text-white">
+                                WE ACCEPT
+                            </h4>
+                            <h5 class="playfair text-secondary position-relative fs-10 text-light">
+                                Online Payment Be Secured
+                            </h5>
+                        </span>
+                    </div>
+                </div>
+                <div class="right col-8 d-flex flex-wrap text-center">
+                    <div class="col-2 col-sm-6 col-lg-2">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/paypal.png" alt="paypal"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-sm-6 col-lg-2">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/visa.png" alt="visa"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 col-lg-3">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/discover.png" alt="discover"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-6 col-lg-3">
+                        <div class="image">
+                            <a href="#">
+                                <img src="images/citibank.png" alt="citibank"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
